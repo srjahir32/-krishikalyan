@@ -1,0 +1,761 @@
+{
+    "Project_name": "KrishiKalyan",
+
+    "Url":"http://snaplockandroid.com/krishi/",
+
+    "Databse_Config": {
+        "DB_CONNECTION": "mysql",
+        "DB_HOST": "127.0.0.1",
+        "DB_PORT": "3306",
+        "DB_DATABASE": "snaplock_krishikalyan",
+        "DB_USERNAME": "snaplock_krishi",
+        "DB_PASSWORD": "Sonal_87",
+    },
+
+    "FTP_this_project":{
+         "FTP Username": "krishi@snaplockandroid.com",
+         "FTP server": "ftp.snaplockandroid.com",
+         "FTP & explicit FTPS port": "21",
+         "FTP password":"Snaplock_krishikalyan@api"
+    },
+
+ "User Model":[{
+    "API_Details":{
+          "Login user":{
+              "Login  User API " : "http://snaplockandroid.com/krishi/api/auth/login",
+              "Method":"POST",
+              "body":{
+                    "username"
+                    "password"
+              }
+          },
+          "create user":{
+              "Create New User API " : "http://snaplockandroid.com/krishi/api/user/create",
+              "Method":"POST",
+              "body":{
+                    "username"
+                    "password"
+              }
+          },
+          "List all user":{
+              "Get list of all User API " : "http://snaplockandroid.com/krishi/api/user",
+              "Method":"GET",
+              "Header reuire" : {
+                "Authorization":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zbmFwbG9ja2FuZHJvaWQuY29tXC9rcmlzaGlcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE1MjI0NzM2NTcsImV4cCI6MTUyMjQ3NzI1NywibmJmIjoxNTIyNDczNjU3LCJqdGkiOiJYdVB0dnRjTk4yR2pGaDE5Iiwic3ViIjo2LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.FQ3qLlf5bSup7YlaXvBOnBO3M6UW4wo_EPY7EFt1zuU"
+              }
+          },
+          "List Specific user":{
+              "Get specific User API " : "http://snaplockandroid.com/krishi/api/user/2",
+              "Method":"GET",
+              "Header reuire" : {
+                "Authorization":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zbmFwbG9ja2FuZHJvaWQuY29tXC9rcmlzaGlcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE1MjI0NzM2NTcsImV4cCI6MTUyMjQ3NzI1NywibmJmIjoxNTIyNDczNjU3LCJqdGkiOiJYdVB0dnRjTk4yR2pGaDE5Iiwic3ViIjo2LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.FQ3qLlf5bSup7YlaXvBOnBO3M6UW4wo_EPY7EFt1zuU"
+              }
+          },
+          "Update user":{
+              "Update User API " : "http://snaplockandroid.com/krishi/api/user/update/2",
+              "Method":"POST",
+              "Header reuire" : {
+                "Authorization":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zbmFwbG9ja2FuZHJvaWQuY29tXC9rcmlzaGlcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE1MjI0NzM2NTcsImV4cCI6MTUyMjQ3NzI1NywibmJmIjoxNTIyNDczNjU3LCJqdGkiOiJYdVB0dnRjTk4yR2pGaDE5Iiwic3ViIjo2LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.FQ3qLlf5bSup7YlaXvBOnBO3M6UW4wo_EPY7EFt1zuU"
+              },
+              "body":{
+                    "username"
+                    "password"
+              }
+          },
+          "Delete Specific user":{
+              "Delete specific User API " : "http://snaplockandroid.com/krishi/api/user/delete/2",
+              "Method":"DELETE",
+              "Header reuire" : {
+                "Authorization":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zbmFwbG9ja2FuZHJvaWQuY29tXC9rcmlzaGlcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE1MjI0NzM2NTcsImV4cCI6MTUyMjQ3NzI1NywibmJmIjoxNTIyNDczNjU3LCJqdGkiOiJYdVB0dnRjTk4yR2pGaDE5Iiwic3ViIjo2LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.FQ3qLlf5bSup7YlaXvBOnBO3M6UW4wo_EPY7EFt1zuU"
+              }
+            },
+          "Logout user":{
+              "Logout current User API " : "http://snaplockandroid.com/krishi/api/auth/logout",
+              "Method":"POST",
+              "Header reuire" : {
+                "Authorization":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zbmFwbG9ja2FuZHJvaWQuY29tXC9rcmlzaGlcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE1MjI0NzM2NTcsImV4cCI6MTUyMjQ3NzI1NywibmJmIjoxNTIyNDczNjU3LCJqdGkiOiJYdVB0dnRjTk4yR2pGaDE5Iiwic3ViIjo2LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.FQ3qLlf5bSup7YlaXvBOnBO3M6UW4wo_EPY7EFt1zuU"
+              }
+          },
+
+     "Error Message":{
+       "Method":"Method not Allow.",
+       "password": [
+                   "The password must be at least 6 characters.",
+                   "The password field is required."
+               ],
+       "username": [
+               "The username field is required.",
+                "The username has already been taken."
+           ],
+       "Query":[
+                "Unauthorised",
+                "User is Empty",
+                "Failed to Find User",
+                "User Not Found for this id",
+              ],
+      "Token" :[
+                 "Token is Invalid",
+                 "There is problem with your token",
+                 "Token is Expired",
+          ],
+      "Create user":[{
+                      "status": "0",
+                      "code": "error",
+                      "message": ["User Not Inserted"]
+                    }],
+      "update user":[{
+                      "status": "0",
+                      "code": "error",
+                      "message": ["User Not Updated","Failed to Update User"]
+                    }],
+      "Delete user":[{
+                      "status": "0",
+                      "code": "error",
+                      "message": ["User Not Deleted","Failed to Delete User"]
+                    }],
+
+   },
+   "Success Message":{
+       "login user":[{
+                     "Success": "data",
+                     "status": "1",
+                     "code": "200",
+                   }],
+       "logout user":[{
+                      "message": "Successfully logged out"
+                   }],
+       "Create user":[{
+                       "status": "1",
+                       "code": "201",
+                       "message": "User Inserted Successfully"
+                     }],
+       "update user":[{
+                       "status": "1",
+                       "code": "201",
+                       "message": "User Updated Successfully"
+                     }],
+       "Delete user":[{
+                         "data": null,
+                         "status": "1",
+                         "code": "204",
+                         "message": "User Deleted Successfully"
+                     }],
+
+   }
+ }
+}],
+
+
+
+ "Product Model":[{
+    "API_Details":{
+
+          "create product":{
+              "Create New product API " : "http://snaplockandroid.com/krishi/api/product/create",
+              "Method":"POST",
+              "Header reuire" : {
+                "Authorization":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zbmFwbG9ja2FuZHJvaWQuY29tXC9rcmlzaGlcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE1MjI0NzM2NTcsImV4cCI6MTUyMjQ3NzI1NywibmJmIjoxNTIyNDczNjU3LCJqdGkiOiJYdVB0dnRjTk4yR2pGaDE5Iiwic3ViIjo2LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.FQ3qLlf5bSup7YlaXvBOnBO3M6UW4wo_EPY7EFt1zuU"
+              },
+              "body:form-data":{
+                    "product_name"
+                    "description"
+                    "unit"
+                    "product_image"
+              }
+          },
+          "List all product":{
+              "Get list of all product API " : "http://snaplockandroid.com/krishi/api/product",
+              "Method":"GET",
+              "Header reuire" : {
+                "Authorization":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zbmFwbG9ja2FuZHJvaWQuY29tXC9rcmlzaGlcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE1MjI0NzM2NTcsImV4cCI6MTUyMjQ3NzI1NywibmJmIjoxNTIyNDczNjU3LCJqdGkiOiJYdVB0dnRjTk4yR2pGaDE5Iiwic3ViIjo2LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.FQ3qLlf5bSup7YlaXvBOnBO3M6UW4wo_EPY7EFt1zuU"
+              }
+          },
+          "List Specific product":{
+              "Get specific product API " : "http://snaplockandroid.com/krishi/api/product/2",
+              "Method":"GET",
+              "Header reuire" : {
+                "Authorization":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zbmFwbG9ja2FuZHJvaWQuY29tXC9rcmlzaGlcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE1MjI0NzM2NTcsImV4cCI6MTUyMjQ3NzI1NywibmJmIjoxNTIyNDczNjU3LCJqdGkiOiJYdVB0dnRjTk4yR2pGaDE5Iiwic3ViIjo2LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.FQ3qLlf5bSup7YlaXvBOnBO3M6UW4wo_EPY7EFt1zuU"
+              }
+          },
+          "Update product":{
+              "Update product API " : "http://snaplockandroid.com/krishi/api/product/update/2",
+              "Method":"POST",
+              "Header reuire" : {
+                "Authorization":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zbmFwbG9ja2FuZHJvaWQuY29tXC9rcmlzaGlcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE1MjI0NzM2NTcsImV4cCI6MTUyMjQ3NzI1NywibmJmIjoxNTIyNDczNjU3LCJqdGkiOiJYdVB0dnRjTk4yR2pGaDE5Iiwic3ViIjo2LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.FQ3qLlf5bSup7YlaXvBOnBO3M6UW4wo_EPY7EFt1zuU"
+              },
+              "body":{
+                      "product_name"
+                      "description"
+                      "unit"
+              }
+          },
+          "Delete Specific product":{
+              "Delete specific product API " : "http://snaplockandroid.com/krishi/api/product/delete/2",
+              "Method":"DELETE",
+              "Header reuire" : {
+                "Authorization: <token>"
+                "example = Authorization":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zbmFwbG9ja2FuZHJvaWQuY29tXC9rcmlzaGlcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE1MjI0NzM2NTcsImV4cCI6MTUyMjQ3NzI1NywibmJmIjoxNTIyNDczNjU3LCJqdGkiOiJYdVB0dnRjTk4yR2pGaDE5Iiwic3ViIjo2LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.FQ3qLlf5bSup7YlaXvBOnBO3M6UW4wo_EPY7EFt1zuU"
+              }
+            },
+
+
+     "Error Message":{
+       "Method":"Method not Allow.",
+       "description": [
+                   "The description field is required."
+               ],
+       "product_name": [
+               "The product field is required.",
+               "The product name has already been taken."
+           ],
+       "product_image": [
+           "The product image field is required.",
+           "The product image must be an image.",
+           "The product image must be a file of type: jpeg, png, jpg, gif, svg.",
+           "The product image may not be greater than 2048 kilobytes."
+       ],
+       "unit": [
+           "The unit field is required."
+       ],
+       "Query":[
+                "Unauthorised",
+                "Product is Empty",
+                "Failed to Find Product",
+                "Product Not Found for this id"
+              ],
+      "Token" :[
+                 "Token is Invalid",
+                 "There is problem with your token",
+                 "Token is Expired",
+          ],
+      "Create Product":[{
+                      "status": "0",
+                      "code": "error",
+                      "message": ["Product Not Inserted"]
+                    }],
+      "update Product":[{
+                      "status": "0",
+                      "code": "error",
+                      "message": ["Product Not Updated","Failed to Update Product"]
+                    }],
+      "Delete Product":[{
+                      "status": "0",
+                      "code": "error",
+                      "message": ["Product Not Deleted","Failed to Delete Product"]
+                    }],
+
+   },
+   "Success Message":{
+
+       "Create Product":[{
+                       "status": "1",
+                       "code": "201",
+                       "message": "Product Inserted Successfully"
+                     }],
+       "update Product":[{
+                       "status": "0",
+                       "code": "201",
+                       "message": "Product Updated Successfully"
+                     }],
+       "Delete Product":[{
+                       "data": null,
+                       "status": "1",
+                       "code": "204",
+                       "message": "Product Deleted Successfully"
+                     }],
+
+   }
+ }
+}],
+
+
+
+
+ "Product_range Model":[{
+    "API_Details":{
+          "create product_range":{
+              "Create New product_range API " : "http://snaplockandroid.com/krishi/api/product_range/create",
+              "Method":"POST",
+              "Header reuire" : {
+                "Authorization":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zbmFwbG9ja2FuZHJvaWQuY29tXC9rcmlzaGlcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE1MjI0NzM2NTcsImV4cCI6MTUyMjQ3NzI1NywibmJmIjoxNTIyNDczNjU3LCJqdGkiOiJYdVB0dnRjTk4yR2pGaDE5Iiwic3ViIjo2LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.FQ3qLlf5bSup7YlaXvBOnBO3M6UW4wo_EPY7EFt1zuU"
+              },
+              "body":{
+                    "product_id"
+                    "from_range"
+                    "to_range"
+                    "profit"
+              }
+          },
+          "List all product_range":{
+              "Get list of all product_range API " : "http://snaplockandroid.com/krishi/api/product_range",
+              "Method":"GET",
+              "Header reuire" : {
+                "Authorization":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zbmFwbG9ja2FuZHJvaWQuY29tXC9rcmlzaGlcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE1MjI0NzM2NTcsImV4cCI6MTUyMjQ3NzI1NywibmJmIjoxNTIyNDczNjU3LCJqdGkiOiJYdVB0dnRjTk4yR2pGaDE5Iiwic3ViIjo2LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.FQ3qLlf5bSup7YlaXvBOnBO3M6UW4wo_EPY7EFt1zuU"
+              }
+          },
+          "List Specific product_range":{
+              "Get specific product_range API " : "http://snaplockandroid.com/krishi/api/product_range/2",
+              "Method":"GET",
+              "Header reuire" : {
+                "Authorization":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zbmFwbG9ja2FuZHJvaWQuY29tXC9rcmlzaGlcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE1MjI0NzM2NTcsImV4cCI6MTUyMjQ3NzI1NywibmJmIjoxNTIyNDczNjU3LCJqdGkiOiJYdVB0dnRjTk4yR2pGaDE5Iiwic3ViIjo2LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.FQ3qLlf5bSup7YlaXvBOnBO3M6UW4wo_EPY7EFt1zuU"
+              }
+          },
+          "Update product":{
+              "Update product_range API " : "http://snaplockandroid.com/krishi/api/product_range/update/2",
+              "Method":"POST",
+              "Header reuire" : {
+                "Authorization":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zbmFwbG9ja2FuZHJvaWQuY29tXC9rcmlzaGlcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE1MjI0NzM2NTcsImV4cCI6MTUyMjQ3NzI1NywibmJmIjoxNTIyNDczNjU3LCJqdGkiOiJYdVB0dnRjTk4yR2pGaDE5Iiwic3ViIjo2LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.FQ3qLlf5bSup7YlaXvBOnBO3M6UW4wo_EPY7EFt1zuU"
+              },
+              "body":{
+                    "product_id"
+                    "from_range"
+                    "to_range"
+                    "profit"
+              }
+          },
+          "Delete Specific product_range":{
+              "Delete specific product_range API " : "http://snaplockandroid.com/krishi/api/product_range/delete/2",
+              "Method":"DELETE",
+              "Header reuire" : {
+                "Authorization: <token>"
+                "example = Authorization":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zbmFwbG9ja2FuZHJvaWQuY29tXC9rcmlzaGlcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE1MjI0NzM2NTcsImV4cCI6MTUyMjQ3NzI1NywibmJmIjoxNTIyNDczNjU3LCJqdGkiOiJYdVB0dnRjTk4yR2pGaDE5Iiwic3ViIjo2LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.FQ3qLlf5bSup7YlaXvBOnBO3M6UW4wo_EPY7EFt1zuU"
+              }
+            },
+
+
+     "Error Message":{
+       "Method":"Method not Allow.",
+       "product_id": [
+             "The product id field is required.",
+             "The product id must be a number."
+         ],
+         "from_range": [
+             "The from range field is required.",
+             "The from range must be a number."
+         ],
+         "to_range": [
+             "The to range field is required.",
+             "The to range must be a number."
+         ],
+         "profit": [
+             "The profit field is required.",
+             "The profit must be a number."
+         ],
+       "Query":[
+                "Unauthorised",
+                "Product Range is Empty",
+                "Failed to Find Product Range",
+                "Product Range Not Found for this id",
+                "Failed to add range"
+              ],
+      "Token" :[
+                 "Token is Invalid",
+                 "There is problem with your token",
+                 "Token is Expired",
+          ],
+      "Create Product Range":[{
+                      "status": "0",
+                      "code": "error",
+                      "message": [
+                        "Product Not Inserted",
+                              {
+                                  "status": "1",
+                                  "code": "200",
+                                  "message": "Product Not Found for this product_id"
+                              },
+                      "Already exists"
+                      ]
+                    }],
+      "update Product Range":[{
+                      "status": "0",
+                      "code": "error",
+                      "message": ["Product Range Not Updated","Failed to Update Product Range"]
+                    }],
+      "Delete Product Range":[{
+                      "status": "0",
+                      "code": "error",
+                      "message": ["Product Range Not Deleted","Failed to Delete Product Range"]
+                    }],
+
+   },
+   "Success Message":{
+
+       "Create Product Range":[{
+                          "status": "1",
+                          "code": "201",
+                          "message": "Product Range Inserted Successfully"
+                     }],
+       "update Product Range":[{
+                       "status": "1",
+                       "code": "201",
+                       "message": "Product Range Updated Successfully"
+                     }],
+       "Delete Product Range":[{
+                       "status": "1",
+                       "code": "204",
+                       "message": "Product Range Deleted Successfully"
+                     }],
+
+   }
+ }
+}],
+
+
+
+
+
+ "Balance Model":[{
+    "API_Details":{
+
+          "create Balance":{
+              "Create New balance API " : "http://snaplockandroid.com/krishi/api/balance/create",
+              "Method":"POST",
+              "Header reuire" : {
+                "Authorization":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zbmFwbG9ja2FuZHJvaWQuY29tXC9rcmlzaGlcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE1MjI0NzM2NTcsImV4cCI6MTUyMjQ3NzI1NywibmJmIjoxNTIyNDczNjU3LCJqdGkiOiJYdVB0dnRjTk4yR2pGaDE5Iiwic3ViIjo2LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.FQ3qLlf5bSup7YlaXvBOnBO3M6UW4wo_EPY7EFt1zuU"
+              },
+              "body":{
+                 "user_id
+                  balance
+                  remaining_balance
+                  date"
+              }
+          },
+          "List all Balance":{
+              "Get list of all balance API " : "http://snaplockandroid.com/krishi/api/balance",
+              "Method":"GET",
+              "Header reuire" : {
+                "Authorization":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zbmFwbG9ja2FuZHJvaWQuY29tXC9rcmlzaGlcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE1MjI0NzM2NTcsImV4cCI6MTUyMjQ3NzI1NywibmJmIjoxNTIyNDczNjU3LCJqdGkiOiJYdVB0dnRjTk4yR2pGaDE5Iiwic3ViIjo2LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.FQ3qLlf5bSup7YlaXvBOnBO3M6UW4wo_EPY7EFt1zuU"
+              }
+          },
+          "List Specific Balance":{
+              "Get specific balance API " : "http://snaplockandroid.com/krishi/api/balance/2",
+              "Method":"GET",
+              "Header reuire" : {
+                "Authorization":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zbmFwbG9ja2FuZHJvaWQuY29tXC9rcmlzaGlcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE1MjI0NzM2NTcsImV4cCI6MTUyMjQ3NzI1NywibmJmIjoxNTIyNDczNjU3LCJqdGkiOiJYdVB0dnRjTk4yR2pGaDE5Iiwic3ViIjo2LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.FQ3qLlf5bSup7YlaXvBOnBO3M6UW4wo_EPY7EFt1zuU"
+              }
+          },
+          "list Balance on date":{
+              "list Balance on date API " : "http://snaplockandroid.com/krishi/api/balance-on-date",
+              "Method":"POST",
+              "Header reuire" : {
+                "Authorization":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zbmFwbG9ja2FuZHJvaWQuY29tXC9rcmlzaGlcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE1MjI0NzM2NTcsImV4cCI6MTUyMjQ3NzI1NywibmJmIjoxNTIyNDczNjU3LCJqdGkiOiJYdVB0dnRjTk4yR2pGaDE5Iiwic3ViIjo2LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.FQ3qLlf5bSup7YlaXvBOnBO3M6UW4wo_EPY7EFt1zuU"
+              },
+              "body":{
+                 "date"
+                 "user_id"
+              }
+          },
+          "Update Balance":{
+              "Update balance API " : "http://snaplockandroid.com/krishi/api/balance/update/2",
+              "Method":"POST",
+              "Header reuire" : {
+                "Authorization":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zbmFwbG9ja2FuZHJvaWQuY29tXC9rcmlzaGlcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE1MjI0NzM2NTcsImV4cCI6MTUyMjQ3NzI1NywibmJmIjoxNTIyNDczNjU3LCJqdGkiOiJYdVB0dnRjTk4yR2pGaDE5Iiwic3ViIjo2LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.FQ3qLlf5bSup7YlaXvBOnBO3M6UW4wo_EPY7EFt1zuU"
+              },
+              "body":{
+                      "user_id
+                       balance
+                       remaining_balance
+                       date"
+              }
+          },
+          "Delete Specific Balance":{
+              "Delete specific balance API " : "http://snaplockandroid.com/krishi/api/balance/delete/2",
+              "Method":"DELETE",
+              "Header reuire" : {
+                "Authorization: <token>"
+                "example = Authorization":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zbmFwbG9ja2FuZHJvaWQuY29tXC9rcmlzaGlcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE1MjI0NzM2NTcsImV4cCI6MTUyMjQ3NzI1NywibmJmIjoxNTIyNDczNjU3LCJqdGkiOiJYdVB0dnRjTk4yR2pGaDE5Iiwic3ViIjo2LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.FQ3qLlf5bSup7YlaXvBOnBO3M6UW4wo_EPY7EFt1zuU"
+              }
+            },
+
+
+     "Error Message":{
+       "Method":"Method not Allow.",
+       "user_id": [
+            "The user id field is required.",
+            "The user id must be a number.",
+            "The user id has already been taken."
+        ],
+        "balance": [
+            "The balance field is required.",
+            "The balance must be a number."
+        ],
+        "remaining_balance": [
+            "The remaining balance field is required."
+        ],
+        "date": [
+            "The date field is required.",
+            "The date does not match the format Y-m-d."
+        ],
+       "Query":[
+                "Data not found",
+                "Unauthorised",
+                "Balance is Empty",
+                "Failed to Find Balance",
+                "Balance Not Found for this id"
+              ],
+      "Token" :[
+                 "Token is Invalid",
+                 "There is problem with your token",
+                 "Token is Expired",
+          ],
+      "Create purchase":[{
+                      "status": "0",
+                      "code": "error",
+                      "message": ["Balance Not Inserted"]
+                    }],
+      "update purchase":[{
+                      "status": "0",
+                      "code": "error",
+                      "message": ["Balance Not Updated"]
+                    }],
+      "Delete purchase":[{
+                      "status": "0",
+                      "code": "error",
+                      "message": ["Balance Not Deleted"]
+                    }],
+
+   },
+   "Success Message":{
+
+       "Create Balance":[{
+                       "status": "1",
+                       "code": "200",
+                       "message": "Balance Inserted Successfully"
+                     }],
+       "update Balance":[{
+                       "status": "1",
+                       "code": "201",
+                       "message": "Balance Updated Successfully"
+                     }],
+       "Delete Balance":[{
+                       "data":null,
+                       "status": "1",
+                       "code": "204",
+                       "message": "Balance Deleted Successfully"
+                     }],
+
+   }
+ }
+}],
+
+
+
+
+
+ "Purchase Model":[{
+    "API_Details":{
+
+          "create purchase":{
+              "Create New purchase API " : "http://snaplockandroid.com/krishi/api/purchase/create",
+              "Method":"POST",
+              "Header reuire" : {
+                "Authorization":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zbmFwbG9ja2FuZHJvaWQuY29tXC9rcmlzaGlcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE1MjI0NzM2NTcsImV4cCI6MTUyMjQ3NzI1NywibmJmIjoxNTIyNDczNjU3LCJqdGkiOiJYdVB0dnRjTk4yR2pGaDE5Iiwic3ViIjo2LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.FQ3qLlf5bSup7YlaXvBOnBO3M6UW4wo_EPY7EFt1zuU"
+              },
+              "body":{
+                 "user_id
+                  product_id
+                  date"
+              }
+          },
+          "list purchase on date":{
+              "list purchase on date API " : "http://snaplockandroid.com/krishi/api/Purchase-on-date",
+              "Method":"POST",
+              "Header reuire" : {
+                "Authorization":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zbmFwbG9ja2FuZHJvaWQuY29tXC9rcmlzaGlcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE1MjI0NzM2NTcsImV4cCI6MTUyMjQ3NzI1NywibmJmIjoxNTIyNDczNjU3LCJqdGkiOiJYdVB0dnRjTk4yR2pGaDE5Iiwic3ViIjo2LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.FQ3qLlf5bSup7YlaXvBOnBO3M6UW4wo_EPY7EFt1zuU"
+              },
+              "body":{
+                 "date"
+                 "user_id"
+              }
+          },
+          "List all purchase":{
+              "Get list of all purchase API " : "http://snaplockandroid.com/krishi/api/purchase",
+              "Method":"GET",
+              "Header reuire" : {
+                "Authorization":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zbmFwbG9ja2FuZHJvaWQuY29tXC9rcmlzaGlcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE1MjI0NzM2NTcsImV4cCI6MTUyMjQ3NzI1NywibmJmIjoxNTIyNDczNjU3LCJqdGkiOiJYdVB0dnRjTk4yR2pGaDE5Iiwic3ViIjo2LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.FQ3qLlf5bSup7YlaXvBOnBO3M6UW4wo_EPY7EFt1zuU"
+              }
+          },
+          "List Specific purchase":{
+              "Get specific purchase API " : "http://snaplockandroid.com/krishi/api/purchase/2",
+              "Method":"GET",
+              "Header reuire" : {
+                "Authorization":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zbmFwbG9ja2FuZHJvaWQuY29tXC9rcmlzaGlcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE1MjI0NzM2NTcsImV4cCI6MTUyMjQ3NzI1NywibmJmIjoxNTIyNDczNjU3LCJqdGkiOiJYdVB0dnRjTk4yR2pGaDE5Iiwic3ViIjo2LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.FQ3qLlf5bSup7YlaXvBOnBO3M6UW4wo_EPY7EFt1zuU"
+              }
+          },
+          "Update purchase":{
+              "Update purchase API " : "http://snaplockandroid.com/krishi/api/purchase/update/2",
+              "Method":"POST",
+              "Header reuire" : {
+                "Authorization":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zbmFwbG9ja2FuZHJvaWQuY29tXC9rcmlzaGlcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE1MjI0NzM2NTcsImV4cCI6MTUyMjQ3NzI1NywibmJmIjoxNTIyNDczNjU3LCJqdGkiOiJYdVB0dnRjTk4yR2pGaDE5Iiwic3ViIjo2LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.FQ3qLlf5bSup7YlaXvBOnBO3M6UW4wo_EPY7EFt1zuU"
+              },
+              "body":{
+                      "user_id
+                       product_id
+                       total_weight
+                       total_amount
+                       weight_labour
+                       transport_labour
+                       shop_number
+                       date"
+              }
+          },
+          "Delete Specific purchase":{
+              "Delete specific purchase API " : "http://snaplockandroid.com/krishi/api/purchase/delete/2",
+              "Method":"DELETE",
+              "Header reuire" : {
+                "Authorization: <token>"
+                "example = Authorization":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zbmFwbG9ja2FuZHJvaWQuY29tXC9rcmlzaGlcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE1MjI0NzM2NTcsImV4cCI6MTUyMjQ3NzI1NywibmJmIjoxNTIyNDczNjU3LCJqdGkiOiJYdVB0dnRjTk4yR2pGaDE5Iiwic3ViIjo2LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.FQ3qLlf5bSup7YlaXvBOnBO3M6UW4wo_EPY7EFt1zuU"
+              }
+            },
+
+
+     "Error Message":{
+       "Method":"Method not Allow.",
+       "user_id": [
+           "The user id field is required.",
+           "The user id must be a number.",
+           "User Not Found in purchase for this user_id"
+       ],
+       "product_id": [
+           "The product id field is required.",
+           "The product id must be a number.",
+           "Product Range Not Found for this product_id",
+
+       ],
+       "total_weight": [
+           "The total weight field is required.",
+           "he total weight must be a number."
+       ],
+       "total_amount": [
+           "The total amount field is required.",
+           "The total amount must be a number."
+       ],
+       "weight_labour": [
+           "The weight labour field is required.",
+           "The weight labour must be a number."
+       ],
+       "transport_labour": [
+           "The transport labour field is required.",
+           "The transport labour must be a number."
+       ],
+       "shop_number": [
+           "The shop number field is required."
+       ],
+       "date": [
+           "The date field is required.",
+            "The date does not match the format Y-m-d."
+       ],
+       "Query":[
+                "Data not found",
+                "Unauthorised",
+                "Product Purchase is Empty",
+                "Failed to Find Product Purchase",
+                "Product Purchase Not Found for this id"
+              ],
+      "Token" :[
+                 "Token is Invalid",
+                 "There is problem with your token",
+                 "Token is Expired",
+          ],
+      "Create purchase":[{
+                      "status": "400",
+                      "code": "0",
+                      "message": ["Product Purchase Not Inserted", "The product id has already been taken."]
+                    }],
+      "update purchase":[{
+                      "status": "400",
+                      "code": "0",
+                      "message": [
+                                 "Product Purchase Not Updated",
+                                 "Failed to Find Product Purchase",
+                                 "Product Purchase Not Found for this id",
+                                 "User Not Found in purchase for this user_id"
+                                 ]
+                    }],
+      "Delete purchase":[{
+                      "status": "400",
+                      "code": "0",
+                      "message": ["Product Purchase Not Deleted"]
+                    }],
+
+   },
+   "Success Message":{
+
+       "Create purchase":[{
+                       "status": "1",
+                       "code": "200",
+                       "message": "Product Purchase Inserted Successfully"
+                     }],
+       "update purchase":[{
+                       "status": "1",
+                       "code": "201",
+                       "message": "Product Purchase Updated Successfully"
+                     }],
+       "Delete purchase":[{
+                       "data":null,
+                       "status": "1",
+                       "code": "204",
+                       "message": "Product Purchase Deleted Successfully"
+                     }],
+
+   }
+ }
+}],
+
+
+
+
+ "export PDF purchase Model":[{
+    "API_Details":{
+
+          "export purchase data by date":{
+              "export purchase data by date API " : "http://snaplockandroid.com/krishi/api/Export-Purchase",
+              "Method":"POST",
+              "Header reuire" : {
+                "Authorization":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zbmFwbG9ja2FuZHJvaWQuY29tXC9rcmlzaGlcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE1MjI0NzM2NTcsImV4cCI6MTUyMjQ3NzI1NywibmJmIjoxNTIyNDczNjU3LCJqdGkiOiJYdVB0dnRjTk4yR2pGaDE5Iiwic3ViIjo2LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.FQ3qLlf5bSup7YlaXvBOnBO3M6UW4wo_EPY7EFt1zuU"
+              },
+              "body":{
+                 "date"
+                 "user_id"
+              }
+          },
+          "export purchase data by from-date between to date":{
+              "export purchase data by two date API " : "http://snaplockandroid.com/krishi/api/purchase-orders-between-two-dates",
+              "Method":"POST",
+              "Header reuire" : {
+                "Authorization":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9zbmFwbG9ja2FuZHJvaWQuY29tXC9rcmlzaGlcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE1MjI0NzM2NTcsImV4cCI6MTUyMjQ3NzI1NywibmJmIjoxNTIyNDczNjU3LCJqdGkiOiJYdVB0dnRjTk4yR2pGaDE5Iiwic3ViIjo2LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.FQ3qLlf5bSup7YlaXvBOnBO3M6UW4wo_EPY7EFt1zuU"
+              },
+              "body":{
+                 "from-date"
+                 "to-date"
+              }
+          },
+
+
+     "Error Message":{
+       "Method":"Method not Allow.",
+
+       "date": [
+           "The date field is required.",
+            "The date does not match the format Y-m-d.",
+            "Product Purchase Not Found for this date"
+       ],
+       "Query":[
+                "Data not found",
+                "Unauthorised",
+                "Product Purchase Not Found for this date"
+              ],
+      "Token" :[
+                 "Token is Invalid",
+                 "There is problem with your token",
+                 "Token is Expired",
+          ],
+   },
+   "Success Message":{
+
+   }
+ }
+}],
+
+
+}
