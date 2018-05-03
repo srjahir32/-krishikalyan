@@ -547,7 +547,9 @@ class Purchase_ApiController extends Controller
                                           // $user_flage = $user[0]->isadmin;
 
                                            if($isAdmin=='true'){
+
                                              $total_weight =  $request->input('total_weight');
+
                                              $product_result = DB::table('purchase')
                                                   ->where('id',$id)
                                                   ->update([
