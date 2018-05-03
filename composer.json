@@ -39,6 +39,11 @@
     }
   },
   "scripts": {
+    "post-install-cmd": [
+     "php artisan clear-compiled",
+     "php artisan optimize",
+     "chmod -R 777 public/"
+   ],
     "post-root-package-install": [
       "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
     ],
@@ -49,10 +54,7 @@
       "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
       "@php artisan package:discover"
     ],
-    "post-install-cmd": [
-      "php artisan clear-compiled",
-      "chmod -R 777 app/"
-    ]
+
   },
   "config": {
     "preferred-install": "dist",
